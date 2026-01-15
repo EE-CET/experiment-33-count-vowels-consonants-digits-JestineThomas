@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/CountCharacters.java",
+      "run": "java -cp src CountCharacters",
+      "input": "JavaLab@2025",
+      "output": "3 4 4 1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Only Vowels",
+      "setup": "javac src/CountCharacters.java",
+      "run": "java -cp src CountCharacters",
+      "input": "AEIOUaeiou",
+      "output": "10 0 0 0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Mixed Sentence with Spaces",
+      "setup": "javac src/CountCharacters.java",
+      "run": "java -cp src CountCharacters",
+      "input": "Hello World 123",
+      "output": "3 7 3 2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "All Special/Digits",
+      "setup": "javac src/CountCharacters.java",
+      "run": "java -cp src CountCharacters",
+      "input": "123!@#",
+      "output": "0 0 3 3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
